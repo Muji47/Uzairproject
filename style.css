@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#Navbar-content{
+    display: flex;
+    background-color: #f8f9fc;
+    padding:3px;
+}
+.dropbtn {
+background-color: #0E8Ea8;
+color: #fff;
+padding: 16px;
+font-size: 16px;
+border: none;
+margin-right: 3px;
+border-radius: 3px;
+}
+
+.dropdown {
+position: relative;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: #212529;
+background-color: #83D1E1;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+margin: auto;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #5194b1;}
+table,th,td{
+border: #212529 1px solid;
+border-collapse: collapse;
+text-align: center;
+}
+
+#content-area{
+padding: 4px;
+border:  black 1px solid;
+width:65%;
+height: 100vh;
+margin:auto
+} 
+#Table-head{
+font-size: xx-large;
+padding: 30px 0;
+}
+.col-headings{
+color: white;
+background-color: #488ba8;
+}
+.row-content,#userTableBody{
+background-color:#99cee0;
+}
+.row-content,#userTableBody td{
+padding: 5px;
+}
+.table-box-area{
+width: 100px;
+}
+#table-box-area{
+width: 150px;
+}
+.table-button{
+display: flex;
+justify-content: space-between;
+}
+#out-button{
+padding: 4px 20px;
+background-color: red;
+color: #fff;
+border: none; 
+border-radius: 3px;
+}
+#in-button{
+padding: 4px 20px;
+background-color: #198754;
+color: #fff;
+border: none; 
+border-radius: 3px;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    border: 1px solid #888;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+  
+  .popup-content {
+    text-align: center;
+  }
+  
+  .submit-btn {
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .clear-btn {
+    background-color: gray;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+.input-table{
+width: 110px;
+margin: 8px;
+}
+#add-button{
+float: right;
+padding: 4px 20px;
+background-color: #198754;
+color: #fff;
+border: none; 
+border-radius: 3px;
+margin: 10px 0;
+}

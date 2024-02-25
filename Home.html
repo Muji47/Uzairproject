@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDT</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <nav id="Navbar-content">
+            <button class="dropbtn">Logo</button>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+    </nav>
+    <div id="content-area">
+        <table style="margin: 20px auto;">
+            <caption>
+                <p id="Table-head">Reception Management Dashboard Staff</p>
+            </caption>
+            <thead>
+            <tr class="col-headings">
+              <th class="table-box-area">Picture</th>
+              <th class="table-box-area">Name</th>
+              <th class="table-box-area">Surname</th>
+              <th style="width: 30%">Email Address</th>
+              <th class="table-box-area">Status</th>
+              <th style="width: 200px">Out time</th>
+              <th class="table-box-area">Duration</th>
+              <th id="table-box-area">Expected Return time</th>
+            </tr>
+            </thead>
+            <tbody id="userTableBody">
+        </tbody>
+          </table>
+          <div class="table-button">
+            <button id="out-button">Out</button>
+            <button id="in-button">In</button>
+          </div>
+          <div id="popup" class="popup">
+            <div class="popup-content">
+              <h2>Enter out-time for Brage in minutes:</h2>
+              <p>PLease enter a number</p>
+              <input type="text" id="pop-number" style="padding: 2px;">
+              <button class="submit-btn">Submit</button>
+              <button class="clear-btn">Clear</button>
+            </div>
+          </div>
+          <table style="margin: 20px auto; width: 100%;">
+            <tr class="col-headings">
+                <th>Vehicle</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Telephone</th>
+                <th>Address</th>
+                <th>Return item</th>
+            </tr>
+            <tr class="row-content">
+                <td><select class="input-table">
+                    <option>cars</option>
+                    <option>motorcycles</option>
+                </select></td>
+                <td><input class="input-table"/></td>
+                <td><input class="input-table"/></td>
+                <td><input class="input-table"/></td>
+                <td><input class="input-table"/></td>
+                <td><input class="input-table"/></td>
+              </tr>
+          </table>
+          <button id="add-button">Add</button>
+          <div>
+          <table style="margin: 20px auto; width: 100%;">
+            <tr class="col-headings">
+                <th>Vehicle</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Telephone</th>
+                <th>Address</th>
+                <th>Return item</th>
+            </tr>
+            <tr class="row-content">
+              </tr>
+          </table>
+          <button id="add-button">Clear</button>
+        </div>
+            <p style="position: relative; top: 50px; float: right;" id="current-time">Time</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
