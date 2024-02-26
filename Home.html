@@ -10,7 +10,7 @@
     <nav id="Navbar-content">
             <button class="dropbtn">Logo</button>
             <div class="dropdown">
-                <button class="dropbtn">Dropdown</button>
+                <button class="dropbtn">Inventory</button>
                 <div class="dropdown-content">
                   <a href="#">Link 1</a>
                   <a href="#">Link 2</a>
@@ -18,7 +18,7 @@
                 </div>
               </div>
               <div class="dropdown">
-                <button class="dropbtn">Dropdown</button>
+                <button class="dropbtn">Orders</button>
                 <div class="dropdown-content">
                   <a href="#">Link 1</a>
                   <a href="#">Link 2</a>
@@ -47,16 +47,16 @@
         </tbody>
           </table>
           <div class="table-button">
-            <button id="out-button">Out</button>
+            <button id="out-button" onclick="openModal()">Out</button>
             <button id="in-button">In</button>
           </div>
           <div id="popup" class="popup">
             <div class="popup-content">
               <h2>Enter out-time for Brage in minutes:</h2>
               <p>PLease enter a number</p>
-              <input type="text" id="pop-number" style="padding: 2px;">
-              <button class="submit-btn">Submit</button>
-              <button class="clear-btn">Clear</button>
+              <input type="number" id="pop-number" style="padding: 2px;">
+              <button class="submit-btn" onclick="onSubmit()">Submit</button>
+              <button class="clear-btn" onclick="hidePopup()">Clear</button>
             </div>
           </div>
           <table style="margin: 20px auto; width: 100%;">
