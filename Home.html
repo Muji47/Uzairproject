@@ -44,7 +44,7 @@
             </tr>
             </thead>
             <tbody id="userTableBody">
-        </tbody>
+            </tbody>
           </table>
           <div class="table-button">
             <button id="out-button" onclick="openModal()">Out</button>
@@ -53,8 +53,9 @@
           <div id="popup" class="popup">
             <div class="popup-content">
               <h2>Enter out-time for Brage in minutes:</h2>
-              <p>PLease enter a number</p>
-              <input type="number" id="pop-number" style="padding: 2px;">
+              <p>Please enter a number</p>
+              <input type="number" id="pop-number" style="padding: 2px;" required>
+              <p id="inputValidate"></p>
               <button class="submit-btn" onclick="onSubmit()">Submit</button>
               <button class="clear-btn" onclick="hidePopup()">Clear</button>
             </div>
@@ -73,11 +74,11 @@
                     <option>cars</option>
                     <option>motorcycles</option>
                 </select></td>
-                <td><input class="input-table"/></td>
-                <td><input class="input-table"/></td>
-                <td><input class="input-table"/></td>
-                <td><input class="input-table"/></td>
-                <td><input class="input-table"/></td>
+                <td><input class="input-table" id="name"/></td>
+                <td><input class="input-table" id="surname"/></td>
+                <td><input class="input-table" id="telephone"/></td>
+                <td><input class="input-table" id="address"/></td>
+                <td><input class="input-table" id="return-item"/></td>
               </tr>
           </table>
           <button id="add-button">Add</button>
@@ -92,6 +93,7 @@
                 <th>Return item</th>
             </tr>
             <tr class="row-content">
+              <td></td>
               </tr>
           </table>
           <button id="add-button">Clear</button>

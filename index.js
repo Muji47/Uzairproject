@@ -23,21 +23,17 @@ let jsonData;
           <td id="expectedtime"></td>
         `;
         row.addEventListener('click', () => {
-          // Remove selected class from previously selected row
           row.style.backgroundColor="#198754"
           row.style.cursor="pointer"
           const selectedRow = document.querySelector('.selected');
           if (selectedRow) {
             selectedRow.classList.remove('selected');
           }
-          // Add selected class to clicked row
           row.classList.add('selected');
-          // Get the values of the clicked row
           const id = user.id;
           const name = user.name;
           const surname = user.surname;
           const email = user.email;
-          // Do whatever you want with these values
           console.log(`Clicked row - ID: ${id}, Name: ${name}, Surname: ${surname}, Email: ${email}`);
         });
         tableBody.appendChild(row);
@@ -64,7 +60,7 @@ let jsonData;
       const inputNumber = document.getElementById("pop-number");
       selectedRow.querySelector('#user-duration').innerText = convertToHoursAndMinutes(inputNumber.value);
       selectedRow.querySelector('#expectedtime').innerText = addTimeToCurrent(Math.floor(inputNumber.value / 60), inputNumber.value % 60);
-      inputNumber.value = ""; // Clear input field
+      inputNumber.value = "";
     }
     hidePopup();
   }

@@ -81,16 +81,18 @@ display: flex;
 justify-content: space-between;
 }
 #out-button{
-padding: 4px 20px;
+padding: 8px 20px;
 background-color: red;
 color: #fff;
 border: none; 
 border-radius: 3px;
+cursor: pointer;
 }
 #in-button{
-padding: 4px 20px;
+padding: 8px 20px;
 background-color: #198754;
 color: #fff;
+cursor: pointer;
 border: none; 
 border-radius: 3px;
 }
@@ -110,9 +112,11 @@ border-radius: 3px;
   .popup-content {
     text-align: center;
   }
-  
+  #inputValidate{
+    display: none;
+  }
   .submit-btn {
-    background-color: purple;
+    background-color: rgb(77, 48, 156);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -135,7 +139,8 @@ margin: 8px;
 }
 #add-button{
 float: right;
-padding: 4px 20px;
+cursor: pointer;
+padding: 8px 20px;
 background-color: #198754;
 color: #fff;
 border: none; 
